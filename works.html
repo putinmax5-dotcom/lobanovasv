@@ -113,14 +113,16 @@
 
 
 
+	/* увеличенная версия */
 	.diploma.zoomed {
-	  position: fixed;                /* фиксируем относительно окна */
-	  top: 50%;                       /* центр по вертикали */
-	  left: 50%;                      /* центр по горизонтали */
-	  transform: translate(-50%, -50%) scale(3); /* центрирование + масштаб */
-	  z-index: 100;                   /* поверх всех элементов */
-	  cursor: zoom-out;               /* указатель для уменьшения */
-	  transition: transform 0.3s ease;
+	  position: fixed;       /* поверх всего */
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  max-width: 90vw;       /* ширина до 90% экрана */
+	  max-height: 90vh;      /* высота до 90% экрана */
+	  z-index: 1000;
+	  cursor: zoom-out;
 	}
 	</style>
 
