@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ирина Петрова — Учитель математики</title>
+  <meta name="description" content="Личный сайт учителя Лобанова Светлана Васильевна" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Лобанова Светлана Васильевна — Учитель" />
+  <meta property="og:description" content="Программа, расписание, задания, контакты" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/cover.jpg" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230ea5e9'/%3E%3Cpath d='M12 24l20-8 20 8v20a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V24z' fill='white'/%3E%3Cpath d='M20 28h24v4H20zm0 8h24v4H20z' fill='%230ea5e9'/%3E%3C/svg%3E" />
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Лобанова Светлана Васильевна",
+    "jobTitle": "Учитель математики",
+    "worksFor": {"@type":"Organization","name":"ГБОУ Школа №123"},
+    "email": "mailto:teacher@example.com",
+    "url": "https://example.com",
+    "image": "https://example.com/images/avatar.jpg",
+    "sameAs": ["https://t.me/yourhandle", "https://vk.com/yourpage"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+<div>
+          <div>&nbsp;</div>
+            <small style="color:var(--muted)">&nbsp;</small>
+          </div>
+        </div>
+        <div class="menu">
+		  <a href="index.html">Главная</a>
+		  <a href="me.html">Обо мне</a>
+		  <a href="works.html">Портфолио</a>
+		  <a href="foto.html">Фото</a>
+		</div>
+
+        <button class="mobile btn">Меню</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="menu-drawer" style="position:fixed;inset:64px 16px auto 16px;background:var(--card);border:1px solid rgba(2,6,23,.1);border-radius:16px;padding:12px;display:none;z-index:50">
+	<a class="btn" href="index.html">Главная</a>
+	<a class="btn" href="me.html">Обо мне</a>>
+	<a class="btn" href="works.html">Портфолио</a>
+	<a class="btn" href="foto.html">Фото</a>
+  </div>
+
+  <main class="container">
+    <!-- Герой -->	<!-- Секция дипломов -->
+	<!-- Галерея дипломов -->
+	<section id="diplomas">
+	  <h2>Мои дипломы и сертификаты</h2>
+	  <div class="gallery">
+		<img src="image/diplom1.jpg" alt="Диплом 1" class="diploma">
+		<img src="image/diplom2.jpg" alt="Диплом 2" class="diploma">
+		<img src="image/diplom3.jpg" alt="Диплом 3" class="diploma">
+		<img src="image/diplom4.jpg" alt="Диплом 4" class="diploma">
+		<img src="image/diplom5.jpg" alt="Диплом 5" class="diploma">
+		<img src="image/diplom6.jpg" alt="Диплом 6" class="diploma">
+		<img src="image/diplom7.jpg" alt="Диплом 7" class="diploma">
+		<img src="image/diplom8.jpg" alt="Диплом 8" class="diploma">
+		<img src="image/diplom9.jpg" alt="Диплом 9" class="diploma">
+		<img src="image/diplom10.jpg" alt="Диплом 10" class="diploma">
+		<img src="image/diplom11.jpg" alt="Диплом 11" class="diploma">
+		<img src="image/diplom12.jpg" alt="Диплом 12" class="diploma">
+		<img src="image/diplom13.jpg" alt="Диплом 13" class="diploma">
+		<img src="image/diplom14.jpg" alt="Диплом 14" class="diploma">
+		<img src="image/diplom15.jpg" alt="Диплом 15" class="diploma">
+		<img src="image/diplom16.jpg" alt="Диплом 16" class="diploma">
+		<img src="image/diplom17.jpg" alt="Диплом 17" class="diploma">
+		<img src="image/diplom18.jpg" alt="Диплом 18" class="diploma">
+		<img src="image/diplom19.jpg" alt="Диплом 19" class="diploma">
+		<img src="image/diplom20.jpg" alt="Диплом 20" class="diploma">
+		<img src="image/diplom21.jpg" alt="Диплом 21" class="diploma">
+		<img src="image/diplom22.jpg" alt="Диплом 22" class="diploma">
+		<img src="image/diplom23.jpg" alt="Диплом 23" class="diploma">
+		  
+		<!-- Добавляйте новые дипломы аналогично -->
+	  </div>
+	</section>
+
+	<style>
+	.gallery {
+	  display: flex;
+	  flex-wrap: wrap;
+	  gap: 12px;
+	}
+
+	.diploma {
+	  width: 150px;
+	  border-radius: 8px;
+	  cursor: pointer;
+	  transition: transform 0.3s;
+	}
+
+	/* Увеличение при наведении */
+	.diploma:hover {
+	  transform: scale(2);
+	  z-index: 10;
+	  position: relative;
+	}
+
+	/* Увеличение при клике */
+	.diploma:active {
+	  transform: scale(2);
+	  z-index: 10;
+	  position: relative;
+	}
+	</style>
+
+    <!-- Футер -->
+    <section class="footer container">
+
+    </section>
+  </main>
+
+  <!-- Скрипт -->
+  <script src="script.js"></script>
+</body>
+</html>
