@@ -112,16 +112,16 @@ nav {
 }
 
 .card {
-  background: var(--card);
+  background: rgba(11, 18, 32, 0.3); /* 0.3 — это 30% непрозрачности */
   border: 1px solid rgba(148,163,184,.15);
   border-radius: 20px;
-  padding: 5px;
+  padding: 16px;
   box-shadow: 0 10px 30px rgba(0,0,200,.25);
 
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 92%;
+  width: 100%;
   max-width: 300px;
   margin: 0 auto;
 }
