@@ -112,7 +112,7 @@ nav {
 }
 
 .card {
-  background: rgba(11, 18, 32, 0.3); /* 0.3 — это 30% непрозрачности */
+  background: rgba(11, 18, 32, 0); /* 0.3 — это 30% непрозрачности */
   border: 1px solid rgba(148,163,184,.15);
   border-radius: 20px;
   padding: 16px;
