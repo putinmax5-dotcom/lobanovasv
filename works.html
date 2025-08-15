@@ -111,19 +111,20 @@
 	  transition: transform 0.3s;
 	}
 
-	/* Увеличение при наведении */
-	.diploma:hover {
+
+	.diploma {
+	  width: 150px;
+	  border-radius: 8px;
+	  cursor: pointer;
+	  transition: transform 0.3s;
+	}
+
+	.diploma.zoomed {
 	  transform: scale(2);
-	  z-index: 10;
+	  z-index: 20;
 	  position: relative;
 	}
 
-	/* Увеличение при клике */
-	.diploma:active {
-	  transform: scale(2);
-	  z-index: 10;
-	  position: relative;
-	}
 	</style>
 
     <!-- Футер -->
