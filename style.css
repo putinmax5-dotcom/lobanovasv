@@ -247,7 +247,7 @@ p  { line-height: 1.6; margin: 0 0 12px; }
 
 .menu-drawer {
   position: fixed;
-  line-height: 3;  /* межстрочный интервал */
+
   top: 64px;
   left: 16px;
   right: 16px;
