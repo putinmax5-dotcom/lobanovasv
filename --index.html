@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ирина Петрова — Учитель математики</title>
+  <meta name="description" content="Личный сайт учителя: программа, расписание, портфолио, достижения и контакты." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ирина Петрова — Учитель" />
+  <meta property="og:description" content="Программа, расписание, задания, контакты" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/cover.jpg" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230ea5e9'/%3E%3Cpath d='M12 24l20-8 20 8v20a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V24z' fill='white'/%3E%3Cpath d='M20 28h24v4H20zm0 8h24v4H20z' fill='%230ea5e9'/%3E%3C/svg%3E" />
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ирина Петрова",
+    "jobTitle": "Учитель математики",
+    "worksFor": {"@type":"Organization","name":"ГБОУ Школа №123"},
+    "email": "mailto:teacher@example.com",
+    "url": "https://example.com",
+    "image": "https://example.com/images/avatar.jpg",
+    "sameAs": ["https://t.me/yourhandle", "https://vk.com/yourpage"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo">U</div>
+          <div>
+            <div>Ирина Петрова</div>
+            <small style="color:var(--muted)">Учитель математики</small>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="#about">Обо мне</a>
+          <a href="#program">Программа</a>
+          <a href="#schedule">Расписание</a>
+          <a href="#works">Портфолио</a>
+          <a href="#contact" class="cta">Контакты</a>
+        </div>
+        <button class="mobile btn">Меню</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="menu-drawer" style="position:fixed;inset:64px 16px auto 16px;background:var(--card);border:1px solid rgba(2,6,23,.1);border-radius:16px;padding:12px;display:none;z-index:50">
+    <a class="btn" href="#about">Обо мне</a>
+    <a class="btn" href="#program">Программа</a>
+    <a class="btn" href="#schedule">Расписание</a>
+    <a class="btn" href="#works">Портфолио</a>
+    <a class="btn primary" href="#contact">Контакты</a>
+  </div>
+
+  <main class="container">
+    <!-- Герой -->
+    <section class="hero">
+      <div class="grid">
+        <div>
+          <h1>Здравствуйте! 👋</h1>
+          <p>Я — <b>Ирина Петрова</b>, учитель математики с 15-летним стажем. Мой сайт поможет вам быть в курсе программы, заданий и событий.</p>
+          <div class="chips">
+            <span class="chip">Алгебра</span>
+            <span class="chip">Геометрия</span>
+            <span class="chip">Подготовка к ЕГЭ</span>
+          </div>
+        </div>
+        <div class="card" style="display:flex;justify-content:center;align-items:center">
+          <img class="avatar" src="images/avatar.jpg" alt="Фото учителя">
+        </div>
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about">
+      <h2>Обо мне</h2>
+      <p>Работаю в ГБОУ Школа №123, преподаю алгебру и геометрию в 7–11 классах. Веду кружки по олимпиадной математике.</p>
+    </section>
+
+    <!-- Программа -->
+    <section id="program">
+      <h2>Программа</h2>
+      <ul class="list">
+        <li>📘 Алгебра — углублённый уровень</li>
+        <li>📗 Геометрия — базовый и профильный</li>
+        <li>📙 Подготовка к ОГЭ и ЕГЭ</li>
+      </ul>
+    </section>
+
+    <!-- Расписание -->
+    <section id="schedule">
+      <h2>Расписание занятий</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>День</th>
+            <th>Предмет</th>
+            <th>Время</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Понедельник</td><td>Алгебра</td><td>08:30</td></tr>
+          <tr><td>Среда</td><td>Геометрия</td><td>10:15</td></tr>
+          <tr><td>Пятница</td><td>Подготовка к ЕГЭ</td><td>12:00</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="works">
+      <h2>Портфолио</h2>
+      <div class="cols">
+        <div class="card">📂 Методические материалы</div>
+        <div class="card">🏆 Достижения учеников</div>
+        <div class="card">📝 Авторские разработки</div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+      <h2>Контакты</h2>
+      <p>Свяжитесь со мной удобным способом:</p>
+      <div class="cta-row">
+        <a href="mailto:teacher@example.com" class="btn primary">✉ Email</a>
+        <a href="https://t.me/yourhandle" class="btn">💬 Telegram</a>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <section class="footer container">
+      <div class="container" style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between">
+        <span>© <span id="year"></span> Ирина Петрова</span>
+        <span><a href="#">Политика конфиденциальности</a> · <a href="#">Файл cookies</a></span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Скрипт -->
+  <script src="script.js"></script>
+</body>
+</html>
