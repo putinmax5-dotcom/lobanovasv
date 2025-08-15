@@ -125,6 +125,7 @@
       </section>
 
       <p>Побуждаю обучающихся заниматься исследовательской деятельностью, руковожу их исследованием. В 2023 году, подводя итог четырёхлетнего исследования истории совхоза "Новоомский" как части истории Омского Прииртышья, совместно с ученицей 10 класса Лобановой Татьяной провела лекцию "Новоомский: история и современность" в Центре краеведческой информации Омской государственной областной библиотеки имени А. С. Пушкина в рамках научно-популярного краеведческого лектория в "Пушкине".</p>
+
 		
 		<h2 class="section-title">Орлята России</h2>
 
@@ -144,6 +145,38 @@
 
       <p>В своём классе реализую Всероссийскую программу развития социальной активности обучающихся начальных классов "Орлята России".</p>
 		
+		<h2 class="section-title">Школьные навыки</h2>
+
+      <section id="photo-gallery">
+        <div class="gallery-wrapper">
+
+          <div class="gallery">
+            <img src="image/Shkolnye1.jpg" alt="Фото 1" class="gallery-item">
+          </div>
+
+        </div>
+      </section>
+
+      <p>25 марта 2025 года приняла участие в работе предметного жюри регионального этапа Седьмого областного чемпионата "Школьные навыки".</p>
+		
+		<h2 class="section-title">Сила России</h2>
+
+      <section id="photo-gallery">
+        <div class="gallery-wrapper">
+          <button class="prev">&lt;</button>
+          <div class="gallery">
+            <img src="image/Silarossii1.jpg" alt="Фото 1" class="gallery-item">
+            <img src="image/Silarossii2.jpg" alt="Фото 2" class="gallery-item">
+            <img src="image/Silarossii3.jpg" alt="Фото 3" class="gallery-item">
+			<img src="image/Silarossii4.jpg" alt="Фото 4" class="gallery-item">
+
+          </div>
+          <button class="next">&gt;</button>
+        </div>
+      </section>
+
+      <p>Явилась руководителем лагерной смены для подростков в рамках проекта "Сила России". Цель смены - формирование у подростков навыков конструктивного поведения и преодоления жизненных трудностей, создание условий для изменения их жизненных ценностей и для развития их способностей.</p>
+		
 		
     </section>
 	  
@@ -162,17 +195,21 @@ document.querySelectorAll('.gallery-wrapper').forEach(wrapper => {
     gallery.style.transform = `translateX(-${index * 100}%)`;
   }
 
-  prevBtn.addEventListener('click', () => {
-    index = (index - 1 + items.length) % items.length;
-    updateGallery();
-  });
+  // Обработчики только если кнопки существуют
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + items.length) % items.length;
+      updateGallery();
+    });
 
-  nextBtn.addEventListener('click', () => {
-    index = (index + 1) % items.length;
-    updateGallery();
-  });
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % items.length;
+      updateGallery();
+    });
+  }
 });
 </script>
+
 
 
   <script src="script.js"></script>
