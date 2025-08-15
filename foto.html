@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="ru"><head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ирина Петрова — Учитель математики</title>
@@ -67,12 +66,96 @@
 
 	      <section id="about">
 	  <h2>Новоомский: история и современность</h2>
-      <img src="../../photo_2025-08-14_12-27-29.jpg" width="704" height="528" alt=""/>
-      
+
+      <section id="photo-gallery">
+	  <div class="gallery-wrapper">
+		<button class="prev">&lt;</button>
+		<div class="gallery">
+		  <img src="image/photo_2025-08-14_12-27-29.jpg" alt="Фото 1" class="gallery-item">
+		  <img src="image/photo_2025-08-14_12-27-29.jpg" alt="Фото 2" class="gallery-item">
+		  <img src="image/photo_2025-08-14_12-27-29.jpg" alt="Фото 3" class="gallery-item">
+		</div>
+		<button class="next">&gt;</button>
+	  </div>
+	</section>
+
+	<style>
+	.gallery-wrapper {
+	  position: relative;
+	  width: 100%;
+	  max-width: 700px;
+	  margin: 20px auto;
+	  overflow: hidden;
+	}
+
+	.gallery {
+	  display: flex;
+	  transition: transform 0.4s ease;
+	}
+
+	.gallery-item {
+	  min-width: 100%;
+	  border-radius: 8px;
+	}
+
+	button.prev,
+	button.next {
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  background: rgba(0,0,0,0.5);
+	  color: #fff;
+	  border: none;
+	  font-size: 24px;
+	  padding: 10px;
+	  cursor: pointer;
+	  border-radius: 50%;
+	  z-index: 10;
+	}
+
+	button.prev { left: 10px; }
+	button.next { right: 10px; }
+	</style>
+
+	<script>
+	const gallery = document.querySelector('.gallery');
+	const items = document.querySelectorAll('.gallery-item');
+	let index = 0;
+
+	document.querySelector('.prev').addEventListener('click', () => {
+	  index = (index - 1 + items.length) % items.length;
+	  updateGallery();
+	});
+
+	document.querySelector('.next').addEventListener('click', () => {
+	  index = (index + 1) % items.length;
+	  updateGallery();
+	});
+
+	function updateGallery() {
+	  gallery.style.transform = `translateX(-${index * 100}%)`;
+	}
+	</script>
+ 
       <p>Побуждаю обучающихся заниматься исследовательской деятельностью, руковожу их исследованием. В 2023 году, подводя итог четырёхлетнего исследования истории совхоза "Новоомский" как части истории Омского Прииртышья, совместно с ученицей 10 класса Лобановой Татьяной провела лекцию"Новоомский: история и современность" в Центре краеведческой информации Омской государственной областной библиотеки имени А. С. Пушкина в рамках научно- популярного краеведческого лектория в "Пушкине".</p>
     </section>
 
-  </main>
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	    </main>
 
   <!-- Скрипт -->
   <script src="script.js"></script>
