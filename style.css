@@ -258,3 +258,43 @@ p  { line-height: 1.6; margin: 0 0 12px; }
   display: none;
   z-index: 50;
 }
+#photo-gallery {
+  padding: 0;      /* убираем внутренние отступы */
+  margin-top: 0;   /* прижимаем к предыдущему элементу */
+}
+#about h2 {
+  margin-bottom: 8px;
+}
+
+#photo-gallery {
+  padding: 0;
+  margin-top: 0;
+}
+
+.gallery-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 400px; /* фиксированная высота для всех галерей */
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  height: 100%; /* галерея растягивается на высоту контейнера */
+  transition: transform 0.4s ease;
+}
+
+.gallery-item {
+  min-width: 100%;
+  max-height: 100%;
+  margin: auto; /* центрирует фото по вертикали */
+  object-fit: contain; /* помещает фото целиком, без обрезки */
+  display: block;
+  border-radius: 8px;
+}
+.section-title {
+  text-align: center;
+}
+

@@ -109,7 +109,7 @@
 
   <main class="container">
     <section id="about">
-      <h2>Новоомский: история и современность</h2>
+      <h2 class="section-title">Новоомский: история и современность</h2>
 
       <section id="photo-gallery">
         <div class="gallery-wrapper">
@@ -125,28 +125,55 @@
       </section>
 
       <p>Побуждаю обучающихся заниматься исследовательской деятельностью, руковожу их исследованием. В 2023 году, подводя итог четырёхлетнего исследования истории совхоза "Новоомский" как части истории Омского Прииртышья, совместно с ученицей 10 класса Лобановой Татьяной провела лекцию "Новоомский: история и современность" в Центре краеведческой информации Омской государственной областной библиотеки имени А. С. Пушкина в рамках научно-популярного краеведческого лектория в "Пушкине".</p>
+		
+		<h2 class="section-title">Орлята России</h2>
+
+      <section id="photo-gallery">
+        <div class="gallery-wrapper">
+          <button class="prev">&lt;</button>
+          <div class="gallery">
+            <img src="image/Orlyata1.jpg" alt="Фото 1" class="gallery-item">
+            <img src="image/Orlyata2.jpg" alt="Фото 2" class="gallery-item">
+            <img src="image/Orlyata3.jpg" alt="Фото 3" class="gallery-item">
+			<img src="image/Orlyata4.jpg" alt="Фото 4" class="gallery-item">
+			<img src="image/Orlyata5.jpg" alt="Фото 5" class="gallery-item">
+          </div>
+          <button class="next">&gt;</button>
+        </div>
+      </section>
+
+      <p>В своём классе реализую Всероссийскую программу развития социальной активности обучающихся начальных классов "Орлята России".</p>
+		
+		
     </section>
+	  
+	  
   </main>
 
-  <script>
-    const gallery = document.querySelector('.gallery');
-    const items = document.querySelectorAll('.gallery-item');
-    let index = 0;
+<script>
+document.querySelectorAll('.gallery-wrapper').forEach(wrapper => {
+  const gallery = wrapper.querySelector('.gallery');
+  const items = wrapper.querySelectorAll('.gallery-item');
+  const prevBtn = wrapper.querySelector('.prev');
+  const nextBtn = wrapper.querySelector('.next');
+  let index = 0;
 
-    document.querySelector('.prev').addEventListener('click', () => {
-      index = (index - 1 + items.length) % items.length;
-      updateGallery();
-    });
+  function updateGallery() {
+    gallery.style.transform = `translateX(-${index * 100}%)`;
+  }
 
-    document.querySelector('.next').addEventListener('click', () => {
-      index = (index + 1) % items.length;
-      updateGallery();
-    });
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + items.length) % items.length;
+    updateGallery();
+  });
 
-    function updateGallery() {
-      gallery.style.transform = `translateX(-${index * 100}%)`;
-    }
-  </script>
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % items.length;
+    updateGallery();
+  });
+});
+</script>
+
 
   <script src="script.js"></script>
 </body>
