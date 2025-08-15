@@ -2,19 +2,10 @@
   --bg: #0b1220;
   --accent: #0ea5e9;
   --accent-2: #22c55e;
-  --text: #0f172a;
-  --muted: #475569;
-  --card: #ffffff;
-  --card-2: #f8fafc;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --card: #0b1220;
-    --card-2: #0f172a;
-  }
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --card: #0b1220;
+  --card-2: #0f172a;
 }
 
 * {
@@ -22,21 +13,17 @@
 }
 
 html, body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg, #fff, #eef7ff 40%, #ffffff 100%);
+
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(14,165,233,.55), transparent),
+              radial-gradient(1000px 500px at 100% 0, rgba(34,197,94,.22), transparent),
+              var(--bg);
   max-width: 100%;
   overflow-x: hidden;
-}
-
-@media (prefers-color-scheme: dark) {
-  html, body {
-    background: radial-gradient(1200px 600px at 20% -10%, rgba(14,165,233,.15), transparent),
-                radial-gradient(1000px 500px at 100% 0, rgba(34,197,94,.12), transparent),
-                #0b1220;
-  }
 }
 
 a {
@@ -53,17 +40,10 @@ a {
 header {
   position: sticky;
   top: 0;
-  background: rgba(255,255,255,.7);
+  background: rgba(8,12,24,.6);
   backdrop-filter: saturate(160%) blur(8px);
-  border-bottom: 1px solid rgba(2,6,23,.06);
+  border-bottom: 1px solid rgba(148,163,184,.15);
   z-index: 40;
-}
-
-@media (prefers-color-scheme: dark) {
-  header {
-    background: rgba(8,12,24,.6);
-    border-color: rgba(148,163,184,.15);
-  }
 }
 
 nav {
@@ -133,10 +113,10 @@ nav {
 
 .card {
   background: var(--card);
-  border: 1px solid rgba(2,6,23,.06);
+  border: 1px solid rgba(148,163,184,.15);
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 10px 30px rgba(2,6,23,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
 
   display: flex;
   justify-content: center;
@@ -144,13 +124,6 @@ nav {
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
-}
-
-@media (prefers-color-scheme: dark) {
-  .card {
-    border-color: rgba(148,163,184,.15);
-    box-shadow: 0 10px 30px rgba(0,0,0,.25);
-  }
 }
 
 .avatar {
@@ -227,18 +200,11 @@ p  { line-height: 1.6; margin: 0 0 12px; }
 
 .badge {
   display: inline-block;
-  background: rgba(14,165,233,.12);
-  color: #0369a1;
+  background: rgba(14,165,233,.18);
+  color: #7dd3fc;
   padding: 4px 8px;
   border-radius: 999px;
   font-size: 12px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .badge {
-    background: rgba(14,165,233,.18);
-    color: #7dd3fc;
-  }
 }
 
 .footer {
